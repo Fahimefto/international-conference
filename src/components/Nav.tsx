@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Menu } from "@headlessui/react";
 
-const Nav1 = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const routes = [
@@ -187,6 +187,11 @@ const Nav1 = () => {
   return (
     <>
       <header aria-label="IICT SUST" className="shadow-md bg-white">
+        <div className="bg-blue-800 h-[3rem]">
+          <h1 className="text-center py-3 font-semibold text-gray-100 text-sm md:text-lg leading-relaxed tracking-wide uppercase">
+            International Conference SUST 2024 or other title
+          </h1>
+        </div>
         <div className="mx-auto max-w-screen p-4">
           <div className="flex items-center justify-between gap-4 lg:gap-10">
             <div className="flex lg:w-0 lg:flex-1">
@@ -214,7 +219,10 @@ const Nav1 = () => {
                       key={index}
                     >
                       <div className="items-center flex">
-                        <Menu.Button className="inline-flex w-fit justify-center rounded-md   text-sm font-medium hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                        <Menu.Button
+                          className="inline-flex w-fit justify-center rounded-md   text-sm font-medium hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+                          key={index}
+                        >
                           {route.name}
                           <svg
                             className="h-5 w-4 flex justify-center items-center text-blue-500"
@@ -237,7 +245,7 @@ const Nav1 = () => {
                         {route.sub.map((sub) => (
                           <Menu.Item key={sub.name}>
                             {({ active }) => (
-                              <Link href={sub.path} passHref>
+                              <Link href={sub.path} passHref key={index}>
                                 <div
                                   className={`group group-odd:bg-white justify-center flex w-full items-center rounded-sm px-2 py-3 text-sm  hover:bg-blue-800 hover:text-white text-center `}
                                 >
@@ -257,7 +265,7 @@ const Nav1 = () => {
 
             <div className="hidden flex-1 items-center justify-end gap-4 lg:flex">
               <Link href="#">
-                <img src="/sust.png" className="h-12 w-12" alt="SUST Logo" />
+                <img src="/iict.png" className="h-10 w-20" alt="SUST Logo" />
               </Link>
             </div>
 
@@ -437,4 +445,4 @@ const Nav1 = () => {
   );
 };
 
-export default dynamic(() => Promise.resolve(Nav1), { ssr: false });
+export default dynamic(() => Promise.resolve(Navbar), { ssr: false });
