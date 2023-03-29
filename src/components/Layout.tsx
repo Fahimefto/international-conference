@@ -11,7 +11,7 @@ export default function Layout({ children }: any) {
       <Head>
         <title>International Conference</title>
         <meta name="description" content="IICT,SUST" />
-        <link rel="icon" href="#" />
+        <link rel="icon" href="/logo.ico" />
       </Head>
       <main className={inter.className}>
         <div className="flex min-h-screen  flex-col">

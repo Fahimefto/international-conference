@@ -26,7 +26,7 @@ export default function About() {
               <rect x="4" y="4" width="16" height="16" rx="2" />{" "}
               <polyline points="11 12 12 12 12 16 13 16" />
             </svg>
-            International Conference 2023
+            Advance Research on Computing, Electronics & Software Engineering
           </h2>
           <div className="outline bg-white outline-blue-800 mx-5 rounded-md">
             <h2 className="p-5  leading-relaxed">

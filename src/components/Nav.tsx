@@ -19,42 +19,12 @@ const Navbar = () => {
       sub: [
         {
           name: " Research Track",
-          path: "/track/reserch",
+          path: "/tracks/reserch",
           sub: [],
         },
         {
           name: "Industry Track",
-          path: "/about/aim&objective",
-          sub: [],
-        },
-        {
-          name: "Journal First Track",
-          path: "/about/history",
-          sub: [],
-        },
-        {
-          name: "New Ideas and Emerging Results Track",
-          path: "/about/faculty",
-          sub: [],
-        },
-        {
-          name: "Artifact Evaluation Track and ROSE Festival",
-          path: "/about/officer&staff",
-          sub: [],
-        },
-        {
-          name: "Doctoral Symposium Track",
-          path: "/track/doctoral-symposium-track",
-          sub: [],
-        },
-        {
-          name: "Registered Reports Track",
-          path: "/track/registered-reports",
-          sub: [],
-        },
-        {
-          name: "Tool Demo Track",
-          path: "/track/tool",
+          path: "/tracks/industry",
           sub: [],
         },
       ],
@@ -81,7 +51,7 @@ const Navbar = () => {
         },
         {
           name: "Travel Information",
-          path: "/attend/trave-information",
+          path: "/attend/travel-information",
           sub: [],
         },
         {
@@ -98,86 +68,12 @@ const Navbar = () => {
     },
 
     {
-      name: "Co-located Events",
-      path: "#",
-      sub: [
-        {
-          name: "VISSOFT 2023",
-          path: "/co-events/vissot",
-          sub: [],
-        },
-        {
-          name: "SCAM 2023",
-          path: "/co-events/scam",
-          sub: [],
-        },
-        {
-          name: "IWSC 2023",
-          path: "/co-events/iwsc",
-          sub: [],
-        },
-      ],
-    },
-
-    {
       name: "Organization",
       path: "#",
       sub: [
         {
           name: "Organizing Committee",
           path: "/committees/organizing",
-          sub: [],
-        },
-        {
-          name: "Industry Track Committee",
-          path: "/life_at_iict/upcomming_events",
-          sub: [],
-        },
-        {
-          name: "Research Track Committee",
-          path: "/life_at_iict/achievements",
-          sub: [],
-        },
-        {
-          name: "Journal First Track Committee",
-          path: "/committees/organizing",
-          sub: [],
-        },
-        {
-          name: "New Ideas and Emerging Results Track Committee",
-          path: "/committees/organizing",
-          sub: [],
-        },
-        {
-          name: "Artifact Evaluation Track and ROSE Festival Committee",
-          path: "/committees/organizing",
-          sub: [],
-        },
-        {
-          name: "Tool Demo Track Committee",
-          path: "/committees/organizing",
-          sub: [],
-        },
-        {
-          name: "Doctoral Symposium Track Committee",
-          path: "/committees/organizing",
-          sub: [],
-        },
-        {
-          name: "Registered Reports Track Committee",
-          path: "/committees/organizing",
-          sub: [],
-        },
-      ],
-    },
-
-    {
-      name: "Series ",
-      path: "#",
-      sub: [
-        {
-          name: "ICSME 2024",
-          path: "/ICSME",
           sub: [],
         },
       ],
@@ -187,16 +83,16 @@ const Navbar = () => {
   return (
     <>
       <header aria-label="IICT SUST" className="shadow-md bg-white">
-        <div className="bg-blue-800 h-[3rem]">
+        <div className="bg-blue-800">
           <h1 className="text-center py-3 font-semibold text-gray-100 text-sm md:text-lg leading-relaxed tracking-wide uppercase">
-            International Conference SUST 2024 or other title
+            Advance Research on Computing, Electronics & Software Engineering
           </h1>
         </div>
         <div className="mx-auto max-w-screen p-4">
           <div className="flex items-center justify-between gap-4 lg:gap-10">
             <div className="flex lg:w-0 lg:flex-1">
               <Link href="/">
-                <img src="/sust.png" className="h-16 w-16" alt="IICT Logo" />
+                <img src="/logo.png" className="h-16 w-16" alt="Logo" />
               </Link>
             </div>
 
@@ -207,7 +103,11 @@ const Navbar = () => {
               {routes.map((route, index) => {
                 if (route.sub.length < 1) {
                   return (
-                    <Link className="" href={`${route.path}`} key={index}>
+                    <Link
+                      className="font-bold"
+                      href={`${route.path}`}
+                      key={index}
+                    >
                       {route.name}
                     </Link>
                   );
@@ -220,7 +120,7 @@ const Navbar = () => {
                     >
                       <div className="items-center flex">
                         <Menu.Button
-                          className="inline-flex w-fit justify-center rounded-md   text-sm font-medium hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+                          className="inline-flex w-fit justify-center rounded-md   text-sm font-bold hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
                           key={index}
                         >
                           {route.name}
@@ -263,9 +163,25 @@ const Navbar = () => {
               })}
             </nav>
 
-            <div className="hidden flex-1 items-center justify-end gap-4 lg:flex">
+            <div className="hidden flex-1  items-center justify-end lg:flex">
               <Link href="#">
-                <img src="/iict.png" className="h-10 w-20" alt="SUST Logo" />
+                <div className="flex mx-5 bg-blue-800 rounded-full px-4 font-bold text-sm py-2 text-white hover:opacity-90">
+                  <svg
+                    className="h-5 inline-block items-center mr-2"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    {" "}
+                    <circle cx="12" cy="12" r="10" />{" "}
+                    <line x1="12" y1="16" x2="12" y2="12" />{" "}
+                    <line x1="12" y1="8" x2="12.01" y2="8" />
+                  </svg>
+                  Register
+                </div>
               </Link>
             </div>
 
@@ -316,7 +232,7 @@ const Navbar = () => {
 
       {isOpen && (
         <div
-          className={`lg:hidden absolute w-full top-18 right-0 flex max-h-[35rem] md:min-h-[30rem] mb-10 pb-5 flex-col justify-between border-r bg-white   border-b-2 border-opacity-25 border-gray-700 rounded-b-2xl shadow-lg`}
+          className={`lg:hidden absolute w-full top-18 right-0 flex max-h-screen md:min-h-[30rem] mb-10 pb-5 flex-col justify-between border-r bg-white   border-b-2 border-opacity-25 border-gray-700 rounded-b-2xl shadow-lg`}
         >
           <div className={`px-5  overflow-y-auto `}>
             <nav
@@ -437,6 +353,26 @@ const Navbar = () => {
                   );
                 }
               })}
+              <Link href="/register">
+                <div className="flex items-center gap-2 rounded-lg hover:bg-blue-100 px-4 py-2 text-gray-800">
+                  <svg
+                    className="h-5 w-5 text-blue-800 hover:text-white hover:bg-white"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    {" "}
+                    <circle cx="12" cy="12" r="10" />{" "}
+                    <polyline points="12 16 16 12 12 8" />{" "}
+                    <line x1="8" y1="12" x2="16" y2="12" />
+                  </svg>
+
+                  <span className="text-sm font-medium">Register</span>
+                </div>
+              </Link>
             </nav>
           </div>
         </div>
