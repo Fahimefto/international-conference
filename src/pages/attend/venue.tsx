@@ -1,5 +1,6 @@
 import React from "react";
+import Layout from "../../components/Layout";
 
 export default function Venue() {
-  return <div>Venue</div>;
+  return <Layout>Venue</Layout>;
 }

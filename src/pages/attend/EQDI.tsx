@@ -1,5 +1,6 @@
 import React from "react";
+import Layout from "../../components/Layout";
 
 export default function EQDI() {
-  return <div>EQDI</div>;
+  return <Layout>EQDI</Layout>;
 }

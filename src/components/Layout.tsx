@@ -14,15 +14,15 @@ export default function Layout({ children }: any) {
         <link rel="icon" href="/logo.ico" />
       </Head>
       <main className={inter.className}>
-        <div className="flex min-h-screen  flex-col">
+        <div className="flex min-h-screen justify-between  flex-col">
           {/* <Nav /> */}
-          <header className=" z-50">
+          <header className="z-50">
             <Nav />
           </header>
           {/** Main content */}
           <section className="relative">{children}</section>
           {/** Footer */}
-          <footer className="relative mt-10">
+          <footer className=" mt-10 justify-end">
             <Footer />
           </footer>
         </div>

@@ -164,7 +164,7 @@ const Navbar = () => {
             </nav>
 
             <div className="hidden flex-1  items-center justify-end lg:flex">
-              <Link href="#">
+              <Link href="/register">
                 <div className="flex mx-5 bg-blue-800 rounded-full px-4 font-bold text-sm py-2 text-white hover:opacity-90">
                   <svg
                     className="h-5 inline-block items-center mr-2"
