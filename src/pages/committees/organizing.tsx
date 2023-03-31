@@ -76,7 +76,7 @@ function Organizing() {
   return (
     <Layout>
       <TitleBar title="Organizing Committee" />
-      <div className="max-w-screen-2xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 place-items-center items-center">
+      <div className="max-w-screen-2xl mx-10 lg:mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 place-items-center items-center">
         {committees.map((committee, index) => (
           <CommitteeCard
             name={committee.name}

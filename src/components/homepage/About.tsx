@@ -46,7 +46,7 @@ export default function About() {
           </div>
         </div>
         <div className="flex lg:w-1/3 w-full  mt-5">
-          <div className="flex flex-col space-y-10 m-10">
+          <div className="flex flex-col space-y-10 lg:m-10 m-5">
             <Tracks />
             <ImportantDates />
           </div>
