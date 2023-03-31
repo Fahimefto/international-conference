@@ -5,7 +5,7 @@ import ImportantDates from "./ImportantDates";
 export default function About() {
   return (
     <section className="">
-      <div className="bg-blue-800 h-10"></div>
+      <div className="bg-blue-800 lg:h-10 h-5"></div>
       <div className="flex flex-col lg:flex-row max-w-screen-2xl  mx-auto ">
         <div className="lg:w-2/3  w-full ">
           <h2 className="flex font-extrabold uppercase text-xl p-5 tracking-wider">
