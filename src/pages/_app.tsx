@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
         display: block;
         position: fixed;
         z-index: 1031;
-        top: 25%;
+        top: 50%;
         size: 50px;
         right: 50%;
       }

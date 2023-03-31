@@ -44,6 +44,39 @@ export default function About() {
               and/or other indexing services.
             </h2>
           </div>
+          <div className=" m-5  rounded-md ">
+            <div className="flex items-center flex-col border pb-5 rounded-lg">
+              <h2 className="text-xl font-bold mb-5  uppercase text-white p-3 bg-blue-800 w-full text-center rounded-t-lg">
+                Publication Partner
+              </h2>
+              <div className="flex flex-col items-center">
+                <img src="/springer.png" className="w-48  "></img>
+                <h3 className="text-sm text-slate-700"></h3>
+              </div>
+            </div>
+          </div>
+
+          <div className=" m-5  rounded-md ">
+            <div className="flex items-center flex-col border rounded-lg pb-5">
+              <h2 className="text-xl font-bold mb-5 rounded-t-lg uppercase text-white p-3 bg-blue-800 w-full text-center">
+                Sponsor
+              </h2>
+              <div className="flex gap-10 flex-col items-center lg:flex-row">
+                <div className="">
+                  <img src="/ugc.png" className="w-40"></img>
+                  <h3 className="text-sm text-center text-slate-700"></h3>
+                </div>
+                <div className="">
+                  <img src="/sust.png" className="w-24"></img>
+                  <h3 className="text-sm text-center text-slate-700"></h3>
+                </div>
+                <div className="">
+                  <img src="/ugc.png" className="w-40"></img>
+                  <h3 className="text-sm text-center text-slate-700"></h3>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="flex lg:w-1/3 w-full  mt-5">
           <div className="flex flex-col space-y-10 lg:m-10 m-5">
