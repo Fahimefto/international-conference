@@ -29,6 +29,16 @@ const Navbar = () => {
         },
       ],
     },
+    {
+      name: "Committees",
+      path: "/committees/organizing",
+      sub: [],
+    },
+    {
+      name: "Important Dates",
+      path: "/date",
+      sub: [],
+    },
 
     {
       name: " Attending",
@@ -68,37 +78,41 @@ const Navbar = () => {
     },
 
     {
-      name: "Organization",
-      path: "#",
-      sub: [
-        {
-          name: "Organizing Committee",
-          path: "/committees/organizing",
-          sub: [],
-        },
-      ],
+      name: "Photo Gallery",
+      path: "/photos",
+      sub: [],
+    },
+    {
+      name: "Contact",
+      path: "/contact",
+      sub: [],
     },
   ];
 
   return (
     <>
-      <header aria-label="IICT SUST" className="shadow-md bg-white">
-        <div className="bg-blue-800">
-          <h1 className="text-center py-3 font-semibold text-gray-100 text-sm md:text-lg leading-relaxed tracking-wide uppercase">
+      <header aria-label="IICT SUST" className="shadow-md bg-blue-800">
+        <div className="flex bg-white items-center justify-center">
+          <div className="">
+            <Link href="/">
+              <img
+                src="/logo1.png"
+                className="h-20 w-24 lg:h-36 lg:w-36"
+                alt="Logo"
+              />
+            </Link>
+          </div>
+          <h1 className="items-center text-center py-3 font-semibold text-blue-800 text-sm md:text-lg lg:text-xl leading-relaxed tracking-wide uppercase">
             Advance Research on Computing, Electronics & Software Engineering
           </h1>
         </div>
         <div className="mx-auto max-w-screen p-4">
           <div className="flex items-center justify-between gap-4 lg:gap-10">
-            <div className="flex lg:w-0 lg:flex-1">
-              <Link href="/">
-                <img src="/logo.png" className="h-16 w-16" alt="Logo" />
-              </Link>
-            </div>
+            <div className="flex lg:w-0 lg:flex-1"></div>
 
             <nav
               aria-label="Site Nav"
-              className="hidden gap-8 text-sm font-medium lg:flex justify-center items-center"
+              className="hidden gap-8 text-sm font-medium lg:flex justify-center items-center text-white"
             >
               {routes.map((route, index) => {
                 if (route.sub.length < 1) {
@@ -141,9 +155,9 @@ const Navbar = () => {
                           </svg>
                         </Menu.Button>
                       </div>
-                      <Menu.Items className="absolute -right-32 w-80 top-16 origin-top-right divide-y divide-blue-300 rounded-md bg-gray-50 shadow-lg ring-4 ring-blue-800 ring-opacity-5 focus:outline-none">
-                        {route.sub.map((sub) => (
-                          <Menu.Item key={sub.name}>
+                      <Menu.Items className="absolute -right-32 w-80 top-12 origin-top-right divide-y divide-blue-300 rounded-md bg-gray-50 text-blue-800 shadow-lg ring-4 ring-blue-800 ring-opacity-5 focus:outline-none">
+                        {route.sub.map((sub, index) => (
+                          <Menu.Item key={index}>
                             {({ active }) => (
                               <Link href={sub.path} passHref key={index}>
                                 <div
@@ -151,7 +165,9 @@ const Navbar = () => {
                                 >
                                   {sub.name}
                                 </div>
-                                <hr></hr>
+                                {route.sub.length !== index + 1 ? (
+                                  <hr></hr>
+                                ) : null}
                               </Link>
                             )}
                           </Menu.Item>
@@ -165,15 +181,15 @@ const Navbar = () => {
 
             <div className="hidden flex-1  items-center justify-end lg:flex">
               <Link href="/register">
-                <div className="flex mx-5 bg-blue-800 rounded-full px-4 font-bold text-sm py-2 text-white hover:opacity-90">
+                <div className="flex mx-5 bg-white rounded-full px-4 font-bold text-sm py-2 text-blue-800 hover:opacity-90">
                   <svg
                     className="h-5 inline-block items-center mr-2"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
                     {" "}
                     <circle cx="12" cy="12" r="10" />{" "}
