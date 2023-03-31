@@ -45,7 +45,7 @@ export default function Tracks() {
     },
   ];
   return (
-    <section className="rounded-md outline outline-blue-800 min-w-full">
+    <div className="rounded-md border-2 border-blue-800 min-w-full">
       <h2 className="bg-blue-800 w-full text-center text-white py-1 font-bold">
         Tracks
       </h2>
@@ -56,6 +56,6 @@ export default function Tracks() {
           </Link>
         ))}
       </div>
-    </section>
+    </div>
   );
 }

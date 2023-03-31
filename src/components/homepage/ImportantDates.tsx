@@ -3,45 +3,30 @@ import React from "react";
 export default function ImportantDates() {
   const dates = [
     {
-      date: "12 January 2024",
-      title:
-        "Excepteur labore elit eu voluptate eu proident proident veniam dolore.",
+      date: "31 August, 2023",
+      title: "Paper Submission Deadline",
     },
     {
-      date: "12 January 2024",
-      title:
-        "Excepteur labore elit eu voluptate eu proident proident veniam dolore.",
+      date: "30 October, 2023",
+      title: "Acceptance Notification",
     },
 
     {
-      date: "12 January 2024",
-      title:
-        "Excepteur labore elit eu voluptate eu proident proident veniam dolore.",
+      date: "15 November, 2023",
+      title: "Camera Ready Submission",
     },
     {
-      date: "12 January 2024",
-      title:
-        "Excepteur labore elit eu voluptate eu proident proident veniam dolore.",
+      date: "05 January, 2024",
+      title: "Registration Deadline",
     },
     {
-      date: "12 January 2024",
-      title:
-        "Excepteur labore elit eu voluptate eu proident proident veniam dolore.",
-    },
-    {
-      date: "12 January 2024",
-      title:
-        "Excepteur labore elit eu voluptate eu proident proident veniam dolore.",
-    },
-    {
-      date: "12 January 2024",
-      title:
-        "Excepteur labore elit eu voluptate eu proident proident veniam dolore.",
+      date: "15-16 February, 2024",
+      title: "Conference Date",
     },
   ];
   return (
-    <section className="rounded-md outline outline-blue-800 min-w-full">
-      <h2 className="bg-blue-800 w-full h-10 text-center text-white py-1 font-bold ">
+    <section className="rounded-md border-2 border-blue-800 min-w-full">
+      <h2 className="bg-blue-800 w-full  text-center text-white py-2 font-bold ">
         Important Dates
       </h2>
       {dates.map((date, index) => (

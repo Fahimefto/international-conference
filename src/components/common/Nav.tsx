@@ -19,7 +19,7 @@ const Navbar = () => {
       sub: [
         {
           name: " Research Track",
-          path: "/tracks/reserch",
+          path: "/tracks/research",
           sub: [],
         },
         {
