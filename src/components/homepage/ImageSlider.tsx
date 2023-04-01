@@ -27,8 +27,7 @@ export default function ImageSlider() {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 2000);
-    return () => clearInterval(interval);
+    }, 3000);
   }, [currentIndex]);
 
   const prevSlide = () => {
