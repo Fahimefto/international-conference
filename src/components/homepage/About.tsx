@@ -1,15 +1,17 @@
 import React from "react";
 import Tracks from "./Tracks";
 import ImportantDates from "./ImportantDates";
+import Notice from "../common/Notice";
 
 export default function About() {
   return (
-    <section className="">
-      <div className="bg-blue-800 lg:h-10 h-5"></div>
+    <>
+      <div className="bg-blue-800 lg:h-10 h-5" />
       <div className="flex flex-col lg:flex-row max-w-screen-2xl  mx-auto ">
-        <div className="lg:w-2/3  w-full ">
-          <h2 className="flex font-extrabold uppercase text-xl p-5 tracking-wider">
-            Advance Research on Computing, Electronics & Software Engineering
+        <div className="lg:w-3/4 w-full ">
+          <h2 className="flex font-extrabold uppercase text-xl p-5 tracking-wider text-center">
+            1&apos;st International Conference on Advance Research on Computing,
+            Electronics & Software Engineering
           </h2>
           <div className="border-[3px] bg-white border-blue-800 mx-5 rounded-md">
             <h2 className="p-5  leading-relaxed text-justify">
@@ -71,20 +73,21 @@ export default function About() {
                   <h3 className="text-sm text-center text-slate-700"></h3>
                 </div>
                 <div className="">
-                  <img src="/ugc.png" className="w-40"></img>
+                  <img src="/crtc.png" className="w-32"></img>
                   <h3 className="text-sm text-center text-slate-700"></h3>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex lg:w-1/3 w-full  mt-5">
-          <div className="flex flex-col space-y-10 lg:m-10 m-5">
+        <div className="flex lg:w-1/4 w-full  mt-10">
+          <div className="flex flex-col space-y-10 mx-5 w-full">
             <Tracks />
             <ImportantDates />
+            <Notice />
           </div>
         </div>
       </div>
-    </section>
+    </>
   );
 }

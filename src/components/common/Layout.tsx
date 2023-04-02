@@ -3,6 +3,8 @@ import Footer from "./Footer";
 import Nav from "./Nav";
 import Head from "next/head";
 import { Lato } from "@next/font/google";
+import OntopScroll from "./OnTopScroll";
+
 const inter = Lato({ weight: ["400", "700", "900"], subsets: ["latin"] });
 export default function Layout({ children }: any) {
   return (
@@ -60,6 +62,7 @@ export default function Layout({ children }: any) {
           <footer className=" mt-10 justify-end">
             <Footer />
           </footer>
+          <OntopScroll />
         </div>
       </main>
     </>

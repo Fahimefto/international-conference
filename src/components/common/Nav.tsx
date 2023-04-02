@@ -30,6 +30,11 @@ const Navbar = () => {
       ],
     },
     {
+      name: "For-Authors",
+      path: "/for-authors",
+      sub: [],
+    },
+    {
       name: "Committees",
       path: "/committees/organizing",
       sub: [],
@@ -103,7 +108,8 @@ const Navbar = () => {
             </Link>
           </div>
           <h1 className="items-center text-center py-3 font-semibold text-blue-800 text-sm md:text-lg lg:text-xl leading-relaxed tracking-wide uppercase">
-            Advance Research on Computing, Electronics & Software Engineering
+            1st International Conference on Advance Research on Computing,
+            Electronics & Software Engineering
           </h1>
         </div>
         <div className="mx-auto max-w-screen p-4">

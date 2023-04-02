@@ -6,6 +6,12 @@ import CommitteeCard from "../../components/common/CommitteeCard";
 function Organizing() {
   const committees = [
     {
+      name: "Professor Farid Uddin Ahmed",
+      designation: "Vice Chancellor, SUST",
+      img: "/committee/vc.jpg",
+      role: "Chief Patron",
+    },
+    {
       name: "Dr. M. Jahirul Islam",
       designation: "Professor, CSE & Director, IICT",
       img: "/committee/jahirul.jpg",
@@ -22,6 +28,12 @@ function Organizing() {
       designation: "Associate Professor, EEE",
       img: "/committee/ifte.png",
       role: "Co-Chair",
+    },
+    {
+      name: "Dr. Md Forhad Rabbi",
+      designation: "Professor, CSE",
+      img: "/committee/farhad.png",
+      role: "Secretary",
     },
     {
       name: "Dr. Ahsan Habib",
@@ -76,7 +88,7 @@ function Organizing() {
   return (
     <Layout>
       <TitleBar title="Organizing Committee" />
-      <div className="max-w-screen-2xl mx-10 lg:mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 place-items-center items-center">
+      <div className="max-w-screen-xl mx-10 lg:mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 place-items-center items-center">
         {committees.map((committee, index) => (
           <CommitteeCard
             name={committee.name}
