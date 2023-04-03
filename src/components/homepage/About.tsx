@@ -10,25 +10,25 @@ export default function About() {
       <div className="flex flex-col lg:flex-row max-w-screen-2xl  mx-auto ">
         <div className="lg:w-3/4 w-full ">
           <h2 className="flex font-extrabold uppercase text-xl p-5 tracking-wider text-center">
-            1&apos;st International Conference on Advance Research on Computing,
-            Electronics & Software Engineering
+            1<sub className="subs">st</sub> International Conference on Advance
+            Research on Computing, Electronics & Software Engineering
           </h2>
           <div className="border-[3px] bg-white border-blue-800 mx-5 rounded-md">
-            <h2 className="p-5  leading-relaxed text-justify">
-              2024 1&apos;st International Conference on Advance Research on
-              Computing, Electronics and Software Engineering (ARCES 2024) will
-              be held February 15-16 , 2024 in Sylhet, Bangladesh. This
-              conference will be sponsored by Springer. The conference will
-              bring together the top researchers from Asian Pacific nations,
-              North America, Europe and around the world to exchange their
-              research results and address open issues in 4IR technologies like
-              Deep Learning and Big Data; Intelligent System Architectures;
-              Intelligent Web and Algorithm;Software Engineering and Service
-              Science;Artificial Intelligence tools &amp; Applications;
-              Blockchain Technology and Systems as well as in Power Systems and
-              Renewable Energy ; Communications and Signal Processing;
-              Electronic Circuits and Systems, etc. It will be one of the
-              leading international conferences for presenting novel and
+            <h2 className="p-5 text-justify">
+              2024 1<sup className="subs">st</sup> International Conference on
+              Advance Research on Computing, Electronics and Software
+              Engineering (ARCES 2024) will be held February 15-16 , 2024 in
+              Sylhet, Bangladesh. This conference will be sponsored by Springer.
+              The conference will bring together the top researchers from Asian
+              Pacific nations, North America, Europe and around the world to
+              exchange their research results and address open issues in 4IR
+              technologies like Deep Learning and Big Data; Intelligent System
+              Architectures; Intelligent Web and Algorithm;Software Engineering
+              and Service Science;Artificial Intelligence tools &amp;
+              Applications; Blockchain Technology and Systems as well as in
+              Power Systems and Renewable Energy ; Communications and Signal
+              Processing; Electronic Circuits and Systems, etc. It will be one
+              of the leading international conferences for presenting novel and
               fundamental advances in the fields of New Generation Artificial
               Intelligence,Internet of Things, Natural Language processing,
               System Model and Algorithm, Software Engineering and Blockchain
