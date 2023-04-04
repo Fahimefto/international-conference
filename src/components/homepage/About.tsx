@@ -49,7 +49,7 @@ export default function About() {
           <div className=" m-5  rounded-md ">
             <div className="flex items-center flex-col border pb-5 rounded-lg">
               <h2 className="text-xl font-bold mb-5  uppercase text-white p-3 bg-blue-800 w-full text-center rounded-t-lg">
-                Publication Partner
+                Publication Partner*
               </h2>
               <div className="flex flex-col items-center">
                 <img src="/springer.png" className="w-48  "></img>
