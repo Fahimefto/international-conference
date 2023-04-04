@@ -8,17 +8,17 @@ export default function ImageSlider() {
       url: "/image/2222.jpg",
     },
     {
-      url: "/image/1.png",
+      url: "/image/1.jpg",
     },
 
     {
-      url: "/image/4.png",
+      url: "/image/4.jpg",
     },
     {
-      url: "/image/5.png",
+      url: "/image/5.jpg",
     },
     {
-      url: "/image/6.png",
+      url: "/image/6.jpg",
     },
   ];
 
