@@ -1,4 +1,5 @@
 import { Card } from "flowbite-react";
+import Image from "next/image";
 import Link from "next/link";
 import { type } from "os";
 import React from "react";
@@ -13,15 +14,20 @@ export default function CommitteeCard(props: Props) {
   return (
     <div className="w-full bg-white border border-blue-800 rounded-lg shadow dark:bg-white dark:border-blue-800 hover:bg-blue-800 hover:bg-opacity-5">
       <div className="flex flex-col items-center pt-4 pb-4 bg-blue-800 bg-opacity-5">
-        <img
+        <div
           className={`${
             props.img
-              ? "w-24 h-24 mb-3 rounded-full  border-[2px] border-blue-800"
-              : "w-24 h-24 mb-3 rounded-full "
+              ? "relative w-24 h-24 mb-3 rounded-full z-50 border-[2px] border-blue-800 overflow-hidden"
+              : "relative w-24 h-24 mb-3 rounded-full z-50 overflow-hidden"
           }`}
-          src={`${props.img}`}
-          alt={`${props.name} image`}
-        />
+        >
+          <Image
+            layout="fill"
+            objectFit="contain"
+            src={`${props.img}`}
+            alt={props.name}
+          />
+        </div>
         <h5 className="mb-1  text-center font-bold text-gray-900 dark:text-gray-800 mx-2">
           {props.name}
         </h5>
