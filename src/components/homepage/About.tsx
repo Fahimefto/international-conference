@@ -9,10 +9,10 @@ export default function About() {
       <div className="bg-blue-800 lg:h-10 h-5" />
       <div className="flex flex-col lg:flex-row max-w-screen-2xl  mx-auto ">
         <div className="lg:w-3/4 w-full ">
-          <h2 className="flex font-extrabold uppercase text-xl p-5 tracking-wider text-center">
-            1<sub className="subs">st</sub> International Conference on Advance
+          <p className="font-extrabold uppercase text-xl p-5 tracking-wider text-center">
+            1<sup className="">st</sup> International Conference on Advance
             Research on Computing, Electronics & Software Engineering
-          </h2>
+          </p>
           <div className="border-[3px] bg-white border-blue-800 mx-5 rounded-md">
             <h2 className="p-5 text-justify">
               2024 1<sup className="subs">st</sup> International Conference on
