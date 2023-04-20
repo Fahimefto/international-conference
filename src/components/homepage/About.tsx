@@ -85,6 +85,27 @@ export default function About() {
             <Tracks />
             <ImportantDates />
             <Notice />
+            {/* If the blue color looks bad just remove the classname from the div
+            below. */}
+            <div className="bg-blue-800 rounded-md p-1">
+              <div
+                className="fb-page"
+                data-href="https://www.facebook.com/arces.sust"
+                data-tabs="timeline"
+                data-height="80"
+                data-small-header="false"
+                data-adapt-container-width="true"
+                data-hide-cover="false"
+                data-show-facepile="true"
+              >
+                <blockquote
+                  cite="https://www.facebook.com/arces.sust"
+                  className="fb-xfbml-parse-ignore"
+                >
+                  <a href="https://www.facebook.com/arces.sust">ARCES 2024</a>
+                </blockquote>
+              </div>
+            </div>
           </div>
         </div>
       </div>
