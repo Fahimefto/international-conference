@@ -2,6 +2,7 @@ import React from "react";
 import Tracks from "./Tracks";
 import ImportantDates from "./ImportantDates";
 import Notice from "../common/Notice";
+import FacebookPage from "../common/FacebookPage";
 
 export default function About() {
   return (
@@ -10,16 +11,16 @@ export default function About() {
       <div className="flex flex-col lg:flex-row max-w-screen-2xl  mx-auto ">
         <div className="lg:w-3/4 w-full ">
           <p className="font-extrabold uppercase text-xl p-5 tracking-wider text-center">
-            1<sup className="">st</sup> International Conference on Advance
-            Research on Computing, Electronics & Software Engineering
+            1<sup className="">st</sup> INTERNATIONAL CONFERENCE ON ADVANCE
+            RESEARCH ON COMPUTER, ELECTRICAL & SOFTWARE ENGINEERING
           </p>
           <div className="border-[3px] bg-white border-blue-800 mx-5 rounded-md">
             <h2 className="p-5 text-justify">
-              2024 1<sup className="subs">st</sup> International Conference on
-              Advance Research on Computing, Electronics and Software
-              Engineering (ARCES 2024) will be held February 15-16 , 2024 in
-              Sylhet, Bangladesh. This conference will be sponsored by Springer.
-              The conference will bring together the top researchers from Asian
+              2024 1<sup className="subs">st</sup>INTERNATIONAL CONFERENCE ON
+              ADVANCE RESEARCH ON COMPUTER, ELECTRICAL & SOFTWARE ENGINEERING
+              (ARCES 2024) will be held February 15-16 , 2024 in Sylhet,
+              Bangladesh. This conference will be sponsored by Springer. The
+              conference will bring together the top researchers from Asian
               Pacific nations, North America, Europe and around the world to
               exchange their research results and address open issues in 4IR
               technologies like Deep Learning and Big Data; Intelligent System
@@ -49,7 +50,7 @@ export default function About() {
           <div className=" m-5  rounded-md ">
             <div className="flex items-center flex-col border pb-5 rounded-lg">
               <h2 className="text-xl font-bold mb-5  uppercase text-white p-3 bg-blue-800 w-full text-center rounded-t-lg">
-                Publication Partner*
+                Conference Sponsor (Pending Approval)
               </h2>
               <div className="flex flex-col items-center">
                 <img src="/springer.png" className="w-48  "></img>
@@ -85,27 +86,7 @@ export default function About() {
             <Tracks />
             <ImportantDates />
             <Notice />
-            {/* If the blue color looks bad just remove the classname from the div
-            below. */}
-            <div className="bg-blue-800 rounded-md p-1">
-              <div
-                className="fb-page"
-                data-href="https://www.facebook.com/arces.sust"
-                data-tabs="timeline"
-                data-height="80"
-                data-small-header="false"
-                data-adapt-container-width="true"
-                data-hide-cover="false"
-                data-show-facepile="true"
-              >
-                <blockquote
-                  cite="https://www.facebook.com/arces.sust"
-                  className="fb-xfbml-parse-ignore"
-                >
-                  <a href="https://www.facebook.com/arces.sust">ARCES 2024</a>
-                </blockquote>
-              </div>
-            </div>
+            <FacebookPage />
           </div>
         </div>
       </div>
