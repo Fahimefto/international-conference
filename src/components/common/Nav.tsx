@@ -102,12 +102,12 @@ const Navbar = () => {
             <Link href="/">
               <img
                 src="/logo1.png"
-                className="h-16 w-16 mx-3 my-1 mt lg:h-36 lg:w-36 object-cover"
+                className="h-16 w-16 mx-3 my-1 mt lg:h-36 lg:w-36 object-cover pr-2"
                 alt="Logo"
               />
             </Link>
           </div>
-          <h1 className="items-center text-center py-3 font-semibold text-blue-800 text-sm md:text-lg lg:text-xl leading-relaxed tracking-wide uppercase">
+          <h1 className="items-center text-center py-3 font-semibold text-blue-800 text-sm md:text-lg lg:text-xl leading-relaxed tracking-wide uppercase pl-3">
             1<sup className="sups">st</sup> International Conference on Advance
             Research on Computer, Electrical & Software Engineering
           </h1>
