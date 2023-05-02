@@ -108,8 +108,8 @@ const Navbar = () => {
             </Link>
           </div>
           <h1 className="items-center text-center py-3 font-semibold text-blue-800 text-sm md:text-lg lg:text-xl leading-relaxed tracking-wide uppercase">
-            1<sup className="sups">st</sup> INTERNATIONAL CONFERENCE ON ADVANCE
-            RESEARCH ON COMPUTER, ELECTRICAL & SOFTWARE ENGINEERING (ARCES 2024)
+            1<sup className="sups">st</sup> International Conference on Advance
+            Research on Computer, Electrical & Software Engineering
           </h1>
         </div>
         <div className="mx-auto max-w-screen p-4">
