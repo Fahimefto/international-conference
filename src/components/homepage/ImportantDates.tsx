@@ -3,24 +3,24 @@ import React from "react";
 export default function ImportantDates() {
   const dates = [
     {
-      date: "31 August, 2023",
+      date: "30 September, 2023",
       title: "Paper Submission Deadline",
     },
     {
-      date: "30 October, 2023",
+      date: "15 November, 2023",
       title: "Acceptance Notification",
     },
 
     {
-      date: "15 November, 2023",
+      date: "30 November, 2023",
       title: "Camera Ready Submission",
     },
     {
-      date: "05 January, 2024",
+      date: "15 January, 2024",
       title: "Registration Deadline",
     },
     {
-      date: "15-16 February, 2024",
+      date: "22-23 February, 2024",
       title: "Conference Date",
     },
   ];

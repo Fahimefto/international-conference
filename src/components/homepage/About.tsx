@@ -16,36 +16,49 @@ export default function About() {
           </p>
           <div className="border-[3px] bg-white border-blue-800 mx-5 rounded-md">
             <h2 className="p-5 text-justify">
-              2024 1<sup className="subs">st</sup>INTERNATIONAL CONFERENCE ON
-              ADVANCE RESEARCH ON COMPUTER, ELECTRICAL & SOFTWARE ENGINEERING
-              (ARCES 2024) will be held February 15-16 , 2024 in Sylhet,
-              Bangladesh. This conference will be sponsored by Springer. The
-              conference will bring together the top researchers from Asian
-              Pacific nations, North America, Europe and around the world to
-              exchange their research results and address open issues in 4IR
-              technologies like Deep Learning and Big Data; Intelligent System
-              Architectures; Intelligent Web and Algorithm;Software Engineering
-              and Service Science;Artificial Intelligence tools &amp;
-              Applications; Blockchain Technology and Systems as well as in
-              Power Systems and Renewable Energy ; Communications and Signal
-              Processing; Electronic Circuits and Systems, etc. It will be one
-              of the leading international conferences for presenting novel and
-              fundamental advances in the fields of New Generation Artificial
-              Intelligence,Internet of Things, Natural Language processing,
-              System Model and Algorithm, Software Engineering and Blockchain
-              Technology and Systems.All papers must be written in English and
-              will be reviewed by technical committees of the Conference.
+              The International Conference on Advanced Research in Computer,
+              Electrical, and Software Engineering (ARCES) is a prestigious
+              platform for research in computer, software, and electrical
+              engineering. The key aspect of ARCES is its encouragement of the
+              necessary interaction between scientists, researchers, engineers,
+              corporate executives, and academic students to bridge the gap
+              between government, business, and academia. To develop this
+              motivation, eminent scholars in pertinent domains provide keynote
+              addresses, tutorials, workshops, exhibitions, and oral
+              presentations. Academic researchers will disclose the results and
+              findings of laboratory-based investigations at this conference. To
+              inform academia about recent developments and useful findings,
+              industry professionals illustrate cutting-edge research in 4IR
+              technologies. For discussions of recent developments in
+              contemporary computing intelligence, the ARCES platform will also
+              address regional and global concerns.
             </h2>
             <h2 className="p-5 text-justify">
-              We are pleased to inform you that at ARCES 2024 we have renowned
-              scholars from home and abroad at our advisory committee, technical
-              program committee and organizing committee. We plan to invite
-              renowned keynote speakers, invited speakers, resource personnel to
-              ARCES 2024. We plan to publish all accepted and presented papers
-              either at Springer Lecture Notes in Computer and Systems or as
-              book chapters published by Taylor and Francis indexed by Scopus
-              and/or other indexing services.
+              Shahjalal University of Science and Technology in Sylhet,
+              Bangladesh, will host ARCES on February 22–23, 2024. Subject to
+              approval, <strong>Springer</strong> will sponsor this conference.
+              The conference will bring together top researchers from Asia
+              Pacific countries, North America, Europe, and other parts of the
+              world to exchange research findings and discuss unresolved
+              problems in 4IR technologies such as Deep Learning and Big Data,
+              Intelligent System Architecture, Intelligent Web and Algorithms,
+              Software Engineering and Service Science, Artificial Intelligence
+              tools & Applications, Blockchain Technology, and Systems, as well
+              as in Power Systems and Renewable Energy; It will be one of the
+              top conferences in Bangladesh as well as in south aisa for
+              showcasing cutting-edge research in the areas of New Generation
+              Artificial Intelligence, Internet of Things, Natural Language
+              Processing, System Model and Algorithm, Software Engineering, and
+              Blockchain Technology and Systems. The conference's technical
+              committees will assess all papers, which must be written in
+              English.
             </h2>
+            <p className="text-sm font-semibold italic p-5">
+              All approved and presented papers will be published by Taylor and
+              Francis as book chapters that are indexed by Scopus and/or other
+              indexing services, or at Springer Lecture Notes in Computer and
+              Systems, depending on the situation.
+            </p>
           </div>
           <div className=" m-5  rounded-md ">
             <div className="flex items-center flex-col border pb-5 rounded-lg">
