@@ -12,7 +12,7 @@ export default function About() {
         <div className="lg:w-3/4 w-full ">
           <p className="font-extrabold uppercase text-xl p-5 tracking-wider text-center">
             1<sup className="">st</sup> INTERNATIONAL CONFERENCE ON ADVANCE
-            RESEARCH ON COMPUTER, ELECTRICAL & SOFTWARE ENGINEERING
+            RESEARCH IN COMPUTER, ELECTRICAL & SOFTWARE ENGINEERING
           </p>
           <div className="border-[3px] bg-white border-blue-800 mx-5 rounded-md">
             <h2 className="p-5 text-justify">
